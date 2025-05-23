@@ -2,8 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -97,7 +95,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
@@ -108,7 +106,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -118,7 +116,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
@@ -161,10 +159,6 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-}
-
-#hobbies {
-  min-height: 100vh;
 }
 
 .section-container {
@@ -391,32 +385,6 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* HOBBIES SECTION */
-
-#hobbies {
-  position: relative;
-}
-
-.video-container {
-  width: 100%;
-  border-radius: 2rem;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  position: relative;
-  height: 200px;
-}
-
-.video-element {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-description {
-  margin: 0 1rem 1rem 1rem;
-  text-align: center;
-}
-
 /* CONTACT */
 
 #contact {
@@ -467,5 +435,3 @@ footer {
 footer p {
   text-align: center;
 }
-
-
