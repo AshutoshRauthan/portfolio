@@ -213,6 +213,7 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 1rem;
   gap: 1rem;
 }
@@ -455,6 +456,11 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+.profile-email-icon {
+  height: 2.5rem;
+  width: auto;
 }
 
 /* FOOTER SECTION */
