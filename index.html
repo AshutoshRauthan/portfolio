@@ -384,8 +384,8 @@ Hi! I'm a Computer Science student specializing in AI & Machine Learning with a 
           <div class="details-container">
             <h2 class="experience-sub-title">Introduction Video</h2>
             <div class="video-container assignment-video">
-              <video class="video-element" controls autoplay muted loop playsinline>
-                <source src="./assets/introduction-video.mp4" type="video/mp4">
+              <video class="video-element" controls>
+                <source src="./assets/introedit.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -397,11 +397,11 @@ Hi! I'm a Computer Science student specializing in AI & Machine Learning with a 
             <h2 class="experience-sub-title">Essay - Multiple Pages</h2>
             <div class="essay-pages">
               <div class="essay-page">
-                <img src="./assets/newpg1.jpg" alt="Essay Page 1" class="essay-img">
+                <img src="./assets/newpg1.jpg" alt="Essay Page 1" class="essay-img" onclick="openEssayModal('./assets/newpg1.jpg')">
                 <p class="essay-caption">Page 1</p>
               </div>
               <div class="essay-page">
-                <img src="./assets/pg2.jpg" alt="Essay Page 2" class="essay-img">
+                <img src="./assets/pg2.jpg" alt="Essay Page 2" class="essay-img" onclick="openEssayModal('./assets/pg2.jpg')">
                 <p class="essay-caption">Page 2</p>
               </div>
             </div>
@@ -614,6 +614,35 @@ Hi! I'm a Computer Science student specializing in AI & Machine Learning with a 
       </nav>
       <p>Copyright &#169; 2025 Ashutosh Rauthan. All Rights Reserved.</p>
     </footer>
+    
+    <!-- Essay Modal -->
+    <div id="essayModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeEssayModal()">&times;</span>
+        <img id="modalEssayImage" src="" alt="Essay Page" class="modal-image">
+      </div>
+    </div>
+    
+    <script>
+      function openEssayModal(imageSrc) {
+        document.getElementById('essayModal').style.display = 'block';
+        document.getElementById('modalEssayImage').src = imageSrc;
+      }
+      
+      function closeEssayModal() {
+        document.getElementById('essayModal').style.display = 'none';
+      }
+      
+      // Close modal when clicking outside
+      window.onclick = function(event) {
+        const modal = document.getElementById('essayModal');
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      }
+    </script>
     <script src="script.js"></script>
+  </body>
+</html>
   </body>
 </html>
